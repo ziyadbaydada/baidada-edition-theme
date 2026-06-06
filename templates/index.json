@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Baidada Édition — Première publication</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)",
+            "width": "fit-content"
+          }
+        },
+        "title": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Avant la chute…<br><em>L'intelligence préventive</em></p>",
+            "type_preset": "h1",
+            "color": "var(--color-foreground-heading)",
+            "width": "fit-content",
+            "max_width": "large"
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Et si la vraie force n'était pas de résister à la chute… mais de la voir venir ?\"</p>",
+            "type_preset": "body",
+            "font_size": "1.2rem",
+            "color": "var(--color-foreground)",
+            "width": "fit-content",
+            "max_width": "medium"
+          }
+        },
+        "cta_decouvrir": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir le livre",
+            "link": "/products/avant-la-chute-lintelligence-preventive-version-papier",
+            "style_class": "button-primary",
+            "width": "fit-content"
+          }
+        },
+        "cta_commander": {
+          "type": "button",
+          "settings": {
+            "label": "Commander",
+            "link": "/products/avant-la-chute-lintelligence-preventive-version-papier",
+            "style_class": "button-secondary",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": ["eyebrow", "title", "subtitle", "cta_decouvrir", "cta_commander"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "layout_desktop": "overlap",
+        "content_position_desktop": "left",
+        "content_alignment_desktop": "left",
+        "min_height_desktop": 90,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "marquee": {
+      "type": "marquee",
+      "blocks": {
+        "item1": { "type": "text", "settings": { "text": "Psychologie" } },
+        "item2": { "type": "text", "settings": { "text": "Réflexion" } },
+        "item3": { "type": "text", "settings": { "text": "Prévention" } },
+        "item4": { "type": "text", "settings": { "text": "Intelligence" } },
+        "item5": { "type": "text", "settings": { "text": "Équilibre" } },
+        "item6": { "type": "text", "settings": { "text": "Savoir" } }
+      },
+      "block_order": ["item1", "item2", "item3", "item4", "item5", "item6"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "movement_direction": "left",
+        "padding-block-start": 20,
+        "padding-block-end": 20
+      }
+    },
+    "featured_product": {
+      "type": "featured-product",
+      "blocks": {
+        "title": { "type": "product-title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "desc": { "type": "product-description", "settings": {} },
+        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+      },
+      "block_order": ["title", "price", "desc", "buy"],
+      "settings": {
+        "product": "avant-la-chute-lintelligence-preventive-version-papier",
+        "color_scheme": "scheme-1",
+        "image_position": "right",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "citation": {
+      "type": "hero",
+      "blocks": {
+        "quote": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Nourrir son esprit,<br>c'est préparer son avenir.\"</p>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "attr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>— Baidada Édition</p>",
+            "type_preset": "body",
+            "letter_spacing": "0.3em",
+            "case": "uppercase",
+            "alignment": "center",
+            "font_size": "0.75rem"
+          }
+        }
+      },
+      "block_order": ["quote", "attr"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "ebook": {
+      "type": "featured-product",
+      "blocks": {
+        "title": { "type": "product-title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "desc": { "type": "product-description", "settings": {} },
+        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+      },
+      "block_order": ["title", "price", "desc", "buy"],
+      "settings": {
+        "product": "avant-la-chute-lintelligence-preventive-version-numerique-ebook",
+        "color_scheme": "scheme-2",
+        "image_position": "left",
+        "padding-block-start": 60,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": ["hero", "marquee", "featured_product", "citation", "ebook"]
+}
