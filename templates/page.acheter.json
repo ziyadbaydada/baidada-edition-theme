@@ -35,11 +35,7 @@
           }
         }
       },
-      "block_order": [
-        "eyebrow",
-        "titre",
-        "sous_titre"
-      ],
+      "block_order": ["eyebrow", "titre", "sous_titre"],
       "settings": {
         "color_scheme": "scheme-5",
         "content_position_desktop": "center",
@@ -50,70 +46,104 @@
       }
     },
     "papier_fr": {
-      "type": "featured-product",
+      "type": "media-with-content",
       "blocks": {
-        "title": {
-          "type": "product-title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy": {
-          "type": "buy-buttons",
+        "label": {
+          "type": "text",
           "settings": {
-            "show_dynamic_checkout": true
+            "text": "<p>Livre Papier · Français</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Avant la Chute</h2>",
+            "type_preset": "h2",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "desc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>L'édition papier française. Impression soignée, format broché. Livraison partout au Maroc et à l'international.</p><p>✓ Livraison soignée<br>✓ Impression de qualité<br>✓ Format broché</p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Commander — 120 MAD",
+            "link": "/products/avant-la-chute-lintelligence-preventive-version-papier",
+            "style_class": "button-primary",
+            "width": "fit-content"
           }
         }
       },
-      "block_order": [
-        "title",
-        "price",
-        "buy"
-      ],
+      "block_order": ["label", "titre", "desc", "cta"],
       "settings": {
-        "product": "avant-la-chute-lintelligence-preventive-version-papier",
         "color_scheme": "scheme-1",
-        "image_position": "left",
+        "media_position": "left",
+        "media_width": "medium",
         "section_width": "page-width",
         "padding-block-start": 80,
         "padding-block-end": 60
       }
     },
     "papier_ar": {
-      "type": "featured-product",
+      "type": "media-with-content",
       "blocks": {
-        "title": {
-          "type": "product-title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy": {
-          "type": "buy-buttons",
+        "label": {
+          "type": "text",
           "settings": {
-            "show_dynamic_checkout": true
+            "text": "<p>كتاب ورقي · عربي</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>قبل السقوط</h2>",
+            "type_preset": "h2",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "desc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>النسخة الورقية العربية. طباعة عالية الجودة، غلاف ناعم. توصيل إلى المغرب وباقي دول العالم.</p><p>✓ توصيل عناية<br>✓ طباعة عالية الجودة<br>✓ غلاف ناعم</p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "اشتري — 120 درهم",
+            "link": "/products/avant-la-chute-lintelligence-preventive-version-papier-arabe",
+            "style_class": "button-primary",
+            "width": "fit-content"
           }
         }
       },
-      "block_order": [
-        "title",
-        "price",
-        "buy"
-      ],
+      "block_order": ["label", "titre", "desc", "cta"],
       "settings": {
-        "product": "avant-la-chute-lintelligence-preventive-version-papier-arabe",
         "color_scheme": "scheme-3",
-        "image_position": "right",
+        "media_position": "right",
+        "media_width": "medium",
         "section_width": "page-width",
         "padding-block-start": 0,
         "padding-block-end": 80
       }
     },
-    "separateur_ebook": {
+    "titre_ebook": {
       "type": "hero",
       "blocks": {
         "titre": {
@@ -125,36 +155,33 @@
             "color": "var(--color-foreground-heading)"
           }
         },
-        "sous_titre": {
+        "desc": {
           "type": "text",
           "settings": {
-            "text": "<p>Téléchargement immédiat via Payhip — sécurisé et instantané.</p>",
+            "text": "<p>Téléchargement immédiat · PDF + ePub · Compatible toutes liseuses</p>",
             "type_preset": "body",
             "alignment": "center",
             "color": "var(--color-foreground)"
           }
         }
       },
-      "block_order": [
-        "titre",
-        "sous_titre"
-      ],
+      "block_order": ["titre", "desc"],
       "settings": {
         "color_scheme": "scheme-5",
         "content_position_desktop": "center",
         "content_alignment_desktop": "center",
         "min_height_desktop": 15,
         "padding-block-start": 60,
-        "padding-block-end": 60
+        "padding-block-end": 40
       }
     },
     "ebook_fr": {
       "type": "media-with-content",
       "blocks": {
-        "eyebrow": {
+        "label": {
           "type": "text",
           "settings": {
-            "text": "<p>📱 eBook · Français · Téléchargement immédiat</p>",
+            "text": "<p>eBook · Français · Téléchargement immédiat</p>",
             "type_preset": "body",
             "font_size": "0.75rem",
             "letter_spacing": "0.1em",
@@ -165,7 +192,7 @@
         "titre": {
           "type": "text",
           "settings": {
-            "text": "<h3>Avant la Chute<br><em>Version numérique FR</em></h3>",
+            "text": "<h3>Avant la Chute — Version numérique FR</h3>",
             "type_preset": "h3",
             "color": "var(--color-foreground-heading)"
           }
@@ -173,36 +200,22 @@
         "desc": {
           "type": "text",
           "settings": {
-            "text": "<p>Le texte intégral en français. Compatible avec toutes les liseuses, tablettes et smartphones. Téléchargement immédiat après paiement.</p>",
+            "text": "<p>Le texte intégral en français. Compatible avec toutes les liseuses, tablettes et smartphones.</p><p>✓ PDF + ePub inclus<br>✓ Accès immédiat<br>✓ Paiement sécurisé</p>",
             "type_preset": "body",
             "color": "var(--color-foreground)"
           }
         },
-        "avantages": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✓ PDF + ePub inclus<br>✓ Accès immédiat<br>✓ Paiement sécurisé via Payhip</p>",
-            "type_preset": "body",
-            "color": "var(--color-foreground)"
-          }
-        },
-        "cta_payhip": {
+        "cta": {
           "type": "button",
           "settings": {
-            "label": "Acheter l'eBook FR",
+            "label": "Acheter l'eBook FR — 80 MAD",
             "link": "https://payhip.com/b/avant-la-chute-fr",
             "style_class": "button-primary",
             "width": "fit-content"
           }
         }
       },
-      "block_order": [
-        "eyebrow",
-        "titre",
-        "desc",
-        "avantages",
-        "cta_payhip"
-      ],
+      "block_order": ["label", "titre", "desc", "cta"],
       "settings": {
         "color_scheme": "scheme-1",
         "media_position": "left",
@@ -215,10 +228,10 @@
     "ebook_ar": {
       "type": "media-with-content",
       "blocks": {
-        "eyebrow": {
+        "label": {
           "type": "text",
           "settings": {
-            "text": "<p>📱 كتاب إلكتروني · عربي · تحميل فوري</p>",
+            "text": "<p>كتاب إلكتروني · عربي · تحميل فوري</p>",
             "type_preset": "body",
             "font_size": "0.75rem",
             "color": "var(--color-foreground)"
@@ -227,7 +240,7 @@
         "titre": {
           "type": "text",
           "settings": {
-            "text": "<h3>قبل السقوط<br><em>النسخة الرقمية العربية</em></h3>",
+            "text": "<h3>قبل السقوط — النسخة الرقمية</h3>",
             "type_preset": "h3",
             "color": "var(--color-foreground-heading)"
           }
@@ -235,36 +248,22 @@
         "desc": {
           "type": "text",
           "settings": {
-            "text": "<p>النص الكامل باللغة العربية. متوافق مع جميع أجهزة القراءة والأجهزة اللوحية والهواتف الذكية. تحميل فوري بعد الدفع.</p>",
+            "text": "<p>النص الكامل باللغة العربية. متوافق مع جميع الأجهزة.</p><p>✓ PDF + ePub مشمول<br>✓ وصول فوري<br>✓ دفع آمن</p>",
             "type_preset": "body",
             "color": "var(--color-foreground)"
           }
         },
-        "avantages": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✓ PDF + ePub مشمول<br>✓ وصول فوري<br>✓ دفع آمن عبر Payhip</p>",
-            "type_preset": "body",
-            "color": "var(--color-foreground)"
-          }
-        },
-        "cta_payhip": {
+        "cta": {
           "type": "button",
           "settings": {
-            "label": "اشتري الكتاب الإلكتروني",
+            "label": "اشتري الكتاب الإلكتروني — 80 درهم",
             "link": "https://payhip.com/b/avant-la-chute-ar",
             "style_class": "button-primary",
             "width": "fit-content"
           }
         }
       },
-      "block_order": [
-        "eyebrow",
-        "titre",
-        "desc",
-        "avantages",
-        "cta_payhip"
-      ],
+      "block_order": ["label", "titre", "desc", "cta"],
       "settings": {
         "color_scheme": "scheme-2",
         "media_position": "right",
@@ -289,9 +288,8 @@
         "g1": {
           "type": "text",
           "settings": {
-            "text": "<p>🔒 Paiement 100% sécurisé</p>",
+            "text": "<p>Paiement 100% sécurisé</p>",
             "type_preset": "body",
-            "font_size": "1rem",
             "alignment": "center",
             "color": "var(--color-foreground)"
           }
@@ -299,9 +297,8 @@
         "g2": {
           "type": "text",
           "settings": {
-            "text": "<p>📦 Livraison soignée (version papier)</p>",
+            "text": "<p>Livraison soignée (version papier)</p>",
             "type_preset": "body",
-            "font_size": "1rem",
             "alignment": "center",
             "color": "var(--color-foreground)"
           }
@@ -309,37 +306,21 @@
         "g3": {
           "type": "text",
           "settings": {
-            "text": "<p>⚡ Accès immédiat (version numérique)</p>",
-            "type_preset": "body",
-            "font_size": "1rem",
-            "alignment": "center",
-            "color": "var(--color-foreground)"
-          }
-        },
-        "contact": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Une question ? <a href='/pages/contact'>Contactez-nous</a></p>",
+            "text": "<p>Accès immédiat (version numérique)</p>",
             "type_preset": "body",
             "alignment": "center",
             "color": "var(--color-foreground)"
           }
         }
       },
-      "block_order": [
-        "titre",
-        "g1",
-        "g2",
-        "g3",
-        "contact"
-      ],
+      "block_order": ["titre", "g1", "g2", "g3"],
       "settings": {
         "color_scheme": "scheme-3",
         "content_position_desktop": "center",
         "content_alignment_desktop": "center",
-        "min_height_desktop": 20,
-        "padding-block-start": 80,
-        "padding-block-end": 80
+        "min_height_desktop": 15,
+        "padding-block-start": 60,
+        "padding-block-end": 60
       }
     }
   },
@@ -347,7 +328,7 @@
     "hero_acheter",
     "papier_fr",
     "papier_ar",
-    "separateur_ebook",
+    "titre_ebook",
     "ebook_fr",
     "ebook_ar",
     "garanties"
