@@ -28,7 +28,7 @@
         "subtitle": {
           "type": "text",
           "settings": {
-            "text": "<p>\"Et si la vraie force n'était pas de résister à la chute… mais de la voir venir ?\"</p>",
+            "text": "<p>Et si la vraie force n'était pas de résister à la chute… mais de la voir venir ?</p>",
             "type_preset": "body",
             "font_size": "1.2rem",
             "color": "var(--color-foreground)",
@@ -40,7 +40,7 @@
           "type": "button",
           "settings": {
             "label": "Découvrir le livre",
-            "link": "/products/avant-la-chute-lintelligence-preventive-version-papier",
+            "link": "/pages/le-livre",
             "style_class": "button-primary",
             "width": "fit-content"
           }
@@ -49,7 +49,7 @@
           "type": "button",
           "settings": {
             "label": "Commander",
-            "link": "/products/avant-la-chute-lintelligence-preventive-version-papier",
+            "link": "/pages/acheter",
             "style_class": "button-secondary",
             "width": "fit-content"
           }
@@ -74,9 +74,11 @@
         "item3": { "type": "text", "settings": { "text": "Prévention" } },
         "item4": { "type": "text", "settings": { "text": "Intelligence" } },
         "item5": { "type": "text", "settings": { "text": "Équilibre" } },
-        "item6": { "type": "text", "settings": { "text": "Savoir" } }
+        "item6": { "type": "text", "settings": { "text": "Savoir" } },
+        "item7": { "type": "text", "settings": { "text": "Anticipation" } },
+        "item8": { "type": "text", "settings": { "text": "Résilience" } }
       },
-      "block_order": ["item1", "item2", "item3", "item4", "item5", "item6"],
+      "block_order": ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8"],
       "settings": {
         "color_scheme": "scheme-1",
         "movement_direction": "left",
@@ -84,21 +86,182 @@
         "padding-block-end": 20
       }
     },
-    "featured_product": {
-      "type": "featured-product",
+    "intro_livre": {
+      "type": "media-with-content",
       "blocks": {
-        "title": { "type": "product-title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "desc": { "type": "product-description", "settings": {} },
-        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Premier ouvrage — 2024</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Avant la Chute</h2>",
+            "type_preset": "h2",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "sous_titre": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>L'Intelligence Préventive</em></p>",
+            "type_preset": "h4",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "desc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>À travers 36 maximes de sagesse universelle, ce livre vous invite à développer la \"vigilance prospective\" : la capacité à anticiper, à lire l'invisible, à agir avant que le possible ne devienne irréversible.</p><p><em>Un livre pour ceux qui veulent cesser de subir — et commencer à prévoir.</em></p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Lire la présentation complète",
+            "link": "/pages/le-livre",
+            "style_class": "button-secondary"
+          }
+        }
       },
-      "block_order": ["title", "price", "desc", "buy"],
+      "block_order": ["eyebrow", "titre", "sous_titre", "desc", "cta"],
       "settings": {
-        "product": "avant-la-chute-lintelligence-preventive-version-papier",
         "color_scheme": "scheme-1",
-        "image_position": "right",
+        "media_position": "left",
+        "media_width": "medium",
+        "section_width": "page-width",
         "padding-block-start": 80,
         "padding-block-end": 80
+      }
+    },
+    "intro_auteur": {
+      "type": "media-with-content",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>L'Auteur</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "nom": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Dr Mohamed Baidada</h2>",
+            "type_preset": "h2",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "titre_auteur": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Docteur en psychologie cognitive</em></p>",
+            "type_preset": "h4",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "bio": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ses travaux portent sur les mécanismes de la prise de décision en contexte d'incertitude, la cognition anticipative et les processus de résilience psychologique. Il a consacré sa thèse à l'étude de la métacognition comme outil de prévention des erreurs systémiques.</p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "citation": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>« Mon ambition est simple : rendre la science du cerveau utile à la vie ordinaire. »</em></p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir l'auteur",
+            "link": "/pages/auteur",
+            "style_class": "button-secondary"
+          }
+        }
+      },
+      "block_order": ["eyebrow", "nom", "titre_auteur", "bio", "citation", "cta"],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "media_position": "right",
+        "media_width": "medium",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "extrait": {
+      "type": "hero",
+      "blocks": {
+        "label": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Extrait du livre</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "maxime": {
+          "type": "text",
+          "settings": {
+            "text": "<p>« Le signal faible d'aujourd'hui<br>est la catastrophe de demain. »</p>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "ref": {
+          "type": "text",
+          "settings": {
+            "text": "<p>— Maxime 08 · Avant la Chute</p>",
+            "type_preset": "body",
+            "font_size": "0.8rem",
+            "letter_spacing": "0.15em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Lire les 36 maximes",
+            "link": "/pages/le-livre",
+            "style_class": "button-primary",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": ["label", "maxime", "ref", "cta"],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 40,
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "citation": {
@@ -107,7 +270,7 @@
         "quote": {
           "type": "text",
           "settings": {
-            "text": "<p>\"Nourrir son esprit,<br>c'est préparer son avenir.\"</p>",
+            "text": "<p>« Nourrir son esprit,<br>c'est préparer son avenir. »</p>",
             "type_preset": "h2",
             "alignment": "center",
             "color": "var(--color-foreground-heading)"
@@ -121,7 +284,8 @@
             "letter_spacing": "0.3em",
             "case": "uppercase",
             "alignment": "center",
-            "font_size": "0.75rem"
+            "font_size": "0.75rem",
+            "color": "var(--color-foreground)"
           }
         }
       },
@@ -135,23 +299,131 @@
         "padding-block-end": 80
       }
     },
-    "ebook": {
-      "type": "featured-product",
+    "articles": {
+      "type": "featured-blog-posts",
       "blocks": {
-        "title": { "type": "product-title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "desc": { "type": "product-description", "settings": {} },
-        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+        "titre_section": {
+          "type": "_featured-blog-posts-title",
+          "settings": {
+            "heading": "Réflexions & Intelligence",
+            "subheading": "Des articles pour affûter votre regard sur vous-même et le monde.",
+            "link": "/blogs/articles",
+            "link_label": "Voir tous les articles"
+          }
+        },
+        "card_1": { "type": "_featured-blog-posts-card", "settings": {} },
+        "card_2": { "type": "_featured-blog-posts-card", "settings": {} },
+        "card_3": { "type": "_featured-blog-posts-card", "settings": {} }
       },
-      "block_order": ["title", "price", "desc", "buy"],
+      "block_order": ["titre_section", "card_1", "card_2", "card_3"],
       "settings": {
-        "product": "avant-la-chute-lintelligence-preventive-version-numerique-ebook",
+        "blog": "articles",
+        "post_limit": 3,
+        "color_scheme": "scheme-1",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "newsletter": {
+      "type": "hero",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>La communauté Baidada Édition</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Rejoindre la communauté</h2>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "desc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Réflexions, extraits exclusifs et insights cognitifs — directement dans votre boîte.</p>",
+            "type_preset": "body",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "form": {
+          "type": "email-signup",
+          "settings": {}
+        }
+      },
+      "block_order": ["eyebrow", "titre", "desc", "form"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "cta_achat": {
+      "type": "hero",
+      "blocks": {
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Disponible maintenant</h2>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "sous_titre": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choisissez votre format — Papier ou numérique, en français ou en arabe.</p>",
+            "type_preset": "body",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Voir toutes les éditions",
+            "link": "/pages/acheter",
+            "style_class": "button-primary",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": ["titre", "sous_titre", "cta"],
+      "settings": {
         "color_scheme": "scheme-2",
-        "image_position": "left",
-        "padding-block-start": 60,
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 80,
         "padding-block-end": 80
       }
     }
   },
-  "order": ["hero", "marquee", "featured_product", "citation", "ebook"]
+  "order": [
+    "hero",
+    "marquee",
+    "intro_livre",
+    "intro_auteur",
+    "extrait",
+    "citation",
+    "articles",
+    "newsletter",
+    "cta_achat"
+  ]
 }

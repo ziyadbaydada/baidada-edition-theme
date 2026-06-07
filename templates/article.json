@@ -1,12 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */{
+{
   "sections": {
     "section": {
       "type": "main-blog-post",
@@ -44,7 +36,7 @@
           "static": true,
           "settings": {
             "show_date": true,
-            "show_author": false,
+            "show_author": true,
             "type_preset": "",
             "alignment": "center",
             "show_alignment": true,
@@ -85,13 +77,84 @@
       "settings": {
         "content_direction": "column",
         "gap": 32,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "citation_fin": {
+      "type": "hero",
+      "blocks": {
+        "quote": {
+          "type": "text",
+          "settings": {
+            "text": "<p>« Nourrir son esprit, c'est préparer son avenir. »</p>",
+            "type_preset": "h3",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "attr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>— Baidada Édition</p>",
+            "type_preset": "body",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "font_size": "0.75rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta_livre": {
+          "type": "button",
+          "settings": {
+            "label": "Découvrir le livre",
+            "link": "/pages/le-livre",
+            "style_class": "button-primary",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": ["quote", "attr", "cta_livre"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 20,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "articles_similaires": {
+      "type": "featured-blog-posts",
+      "blocks": {
+        "titre_section": {
+          "type": "_featured-blog-posts-title",
+          "settings": {
+            "heading": "Continuer la réflexion",
+            "link": "/blogs/articles",
+            "link_label": "Tous les articles"
+          }
+        },
+        "card_1": { "type": "_featured-blog-posts-card", "settings": {} },
+        "card_2": { "type": "_featured-blog-posts-card", "settings": {} },
+        "card_3": { "type": "_featured-blog-posts-card", "settings": {} }
+      },
+      "block_order": ["titre_section", "card_1", "card_2", "card_3"],
+      "settings": {
+        "blog": "articles",
+        "post_limit": 3,
+        "color_scheme": "scheme-1",
+        "section_width": "page-width",
+        "padding-block-start": 80,
         "padding-block-end": 80
       }
     }
   },
   "order": [
-    "section"
+    "section",
+    "citation_fin",
+    "articles_similaires"
   ]
 }

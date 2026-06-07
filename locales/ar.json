@@ -1,0 +1,122 @@
+{
+  "blocks": {
+    "load_video": "تحميل الفيديو: {{ description }}",
+    "sold_out": "نفذت الكمية",
+    "email_signup": {
+      "label": "البريد الإلكتروني",
+      "placeholder": "عنوان البريد الإلكتروني",
+      "success": "شكراً على اشتراكك!"
+    },
+    "filter": "تصفية",
+    "payment_methods": "طرق الدفع",
+    "contact_form": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "comment": "تعليق",
+      "post_success": "شكراً على تواصلك. سنرد عليك في أقرب وقت ممكن.",
+      "error_heading": "يرجى تصحيح العناصر التالية:"
+    },
+    "slider_label": "المنزلق"
+  },
+  "accessibility": {
+    "play_video": "تشغيل الفيديو",
+    "unit_price": "سعر الوحدة",
+    "slideshow_pause": "إيقاف العرض",
+    "slideshow_play": "تشغيل العرض",
+    "remove_item": "حذف {{ title }}",
+    "skip_to_text": "تخطي إلى المحتوى",
+    "skip_to_product_info": "تخطي إلى معلومات المنتج",
+    "close_dialog": "إغلاق",
+    "reset_search": "إعادة تعيين البحث",
+    "search_results_count": "تم العثور على {{ count }} نتيجة لـ « {{ query }} »",
+    "search_results_no_results": "لا توجد نتائج لـ « {{ query }} »",
+    "filters": "الفلاتر"
+  },
+  "actions": {
+    "add_to_cart": "إضافة إلى السلة",
+    "buy_now": "اشتري الآن",
+    "choose_options": "اختر خيارات",
+    "view_details": "عرض التفاصيل",
+    "back_to_blog": "العودة إلى المقالات",
+    "search": "بحث",
+    "clear": "مسح",
+    "apply": "تطبيق",
+    "close": "إغلاق",
+    "view_all": "عرض الكل",
+    "load_more": "تحميل المزيد",
+    "subscribe": "اشترك"
+  },
+  "content": {
+    "search_placeholder": "ابحث...",
+    "no_results": "لا توجد نتائج",
+    "featured": "مميز",
+    "new": "جديد",
+    "sale": "تخفيض"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "إضافة إلى السلة",
+      "sold_out": "نفذت الكمية",
+      "unavailable": "غير متوفر",
+      "on_sale": "تخفيض",
+      "unit_price_label": "سعر الوحدة",
+      "quantity": {
+        "label": "الكمية",
+        "increase": "زيادة الكمية",
+        "decrease": "تقليل الكمية"
+      }
+    },
+    "facets": {
+      "clear_all": "مسح الكل",
+      "sort_by_label": "ترتيب حسب",
+      "results_with_count": {
+        "one": "{{ count }} نتيجة",
+        "other": "{{ count }} نتائج"
+      },
+      "filter_and_sort": "الفلاتر والترتيب"
+    }
+  },
+  "fields": {
+    "email": "البريد الإلكتروني",
+    "name": "الاسم",
+    "first_name": "الاسم الأول",
+    "last_name": "الاسم الأخير",
+    "phone": "الهاتف",
+    "message": "الرسالة"
+  },
+  "blogs": {
+    "article": {
+      "written_by": "بقلم",
+      "read_more": "اقرأ المزيد",
+      "back_to_blog": "العودة إلى المقالات",
+      "share": "مشاركة"
+    },
+    "comments": {
+      "title": "التعليقات",
+      "no_comments": "لا توجد تعليقات بعد.",
+      "form": {
+        "title": "أضف تعليقاً",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "body": "التعليق",
+        "post": "نشر التعليق"
+      }
+    }
+  },
+  "baidada": {
+    "tagline": "تغذية العقل",
+    "sub_tagline": "تغذية العقل تعني تحضير المستقبل",
+    "book_title": "قبل السقوط",
+    "book_subtitle": "الذكاء الوقائي",
+    "author_name": "د. محمد بيضادة",
+    "author_title": "دكتور في علم النفس المعرفي",
+    "discover_book": "اكتشف الكتاب",
+    "buy_now": "اشتري الآن",
+    "all_articles": "جميع المقالات",
+    "discover_author": "اكتشف المؤلف",
+    "all_editions": "جميع الإصدارات",
+    "newsletter_title": "انضم إلى المجتمع",
+    "newsletter_desc": "تأملات ومقتطفات حصرية — مباشرة في بريدك الإلكتروني."
+  }
+}

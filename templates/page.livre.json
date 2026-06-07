@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "hero_livre": {
+      "type": "hero",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Baidada Édition · 2024 · 36 Maximes</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Avant la Chute…<br><em>L'Intelligence Préventive</em></h1>",
+            "type_preset": "h1",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "sous_titre": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Un levier cognitif pour la protection de la santé mentale</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["eyebrow", "titre", "sous_titre"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 50,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "produit_papier_fr": {
+      "type": "featured-product",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Version Française · Broché</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase"
+          }
+        },
+        "title": { "type": "product-title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "desc": { "type": "product-description", "settings": {} },
+        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+      },
+      "block_order": ["eyebrow", "title", "price", "desc", "buy"],
+      "settings": {
+        "product": "avant-la-chute-lintelligence-preventive-version-papier",
+        "color_scheme": "scheme-1",
+        "image_position": "left",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "divider_1": {
+      "type": "divider",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_line": true,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "pourquoi_ce_livre": {
+      "type": "hero",
+      "blocks": {
+        "label": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pourquoi lire ce livre ?</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Ce livre est pour vous si…</h2>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "point_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Vous voulez anticiper, pas subir les événements de votre vie</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "point_2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Vous cherchez la lucidité dans un monde saturé d'informations</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "point_3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Vous voulez comprendre vos biais pour mieux décider</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "point_4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Vous lisez pour agir, pas seulement pour savoir</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["label", "titre", "point_1", "point_2", "point_3", "point_4"],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "extraits": {
+      "type": "carousel",
+      "blocks": {
+        "titre_section": {
+          "type": "group",
+          "settings": {
+            "id": "static-header"
+          }
+        },
+        "maxime_1": {
+          "type": "section",
+          "settings": {
+            "heading": "« La vigilance est la première forme du courage. »",
+            "subheading": "— Maxime 01 · Avant la Chute"
+          }
+        },
+        "maxime_2": {
+          "type": "section",
+          "settings": {
+            "heading": "« Le signal faible d'aujourd'hui est la catastrophe de demain. »",
+            "subheading": "— Maxime 08 · Avant la Chute"
+          }
+        },
+        "maxime_3": {
+          "type": "section",
+          "settings": {
+            "heading": "« Les émotions non traitées deviennent les décisions mal prises. »",
+            "subheading": "— Maxime 16 · Avant la Chute"
+          }
+        },
+        "maxime_4": {
+          "type": "section",
+          "settings": {
+            "heading": "« La résilience se prépare, elle ne s'improvise pas. »",
+            "subheading": "— Maxime 24 · Avant la Chute"
+          }
+        },
+        "maxime_5": {
+          "type": "section",
+          "settings": {
+            "heading": "« L'intelligence préventive n'est pas un don — c'est une pratique quotidienne. »",
+            "subheading": "— Maxime 36 · Avant la Chute"
+          }
+        }
+      },
+      "block_order": ["titre_section", "maxime_1", "maxime_2", "maxime_3", "maxime_4", "maxime_5"],
+      "settings": {
+        "heading": "Les 36 Maximes",
+        "subheading": "Un aperçu de l'intelligence préventive en citations",
+        "color_scheme": "scheme-2",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "accroche_finale": {
+      "type": "hero",
+      "blocks": {
+        "accroche": {
+          "type": "text",
+          "settings": {
+            "text": "<p>« Et si les grands effondrements — personnels, professionnels, collectifs — n'étaient pas des accidents, mais des aboutissements logiques d'une chaîne de signaux ignorés ? »</p>",
+            "type_preset": "h3",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "auteur_ref": {
+          "type": "text",
+          "settings": {
+            "text": "<p>— 4ème de couverture · Avant la Chute</p>",
+            "type_preset": "body",
+            "font_size": "0.8rem",
+            "letter_spacing": "0.15em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["accroche", "auteur_ref"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "versions_disponibles": {
+      "type": "hero",
+      "blocks": {
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Choisissez votre édition</h2>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "sous_titre": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Disponible en version papier et numérique, en français et en arabe.</p>",
+            "type_preset": "body",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta_acheter": {
+          "type": "button",
+          "settings": {
+            "label": "Voir toutes les éditions",
+            "link": "/pages/acheter",
+            "style_class": "button-primary",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": ["titre", "sous_titre", "cta_acheter"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 20,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "produit_papier_ar": {
+      "type": "featured-product",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>النسخة العربية · مجلد</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.1em",
+            "case": "none"
+          }
+        },
+        "title": { "type": "product-title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "desc": { "type": "product-description", "settings": {} },
+        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+      },
+      "block_order": ["eyebrow", "title", "price", "desc", "buy"],
+      "settings": {
+        "product": "avant-la-chute-lintelligence-preventive-version-papier-arabe",
+        "color_scheme": "scheme-3",
+        "image_position": "right",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "hero_livre",
+    "produit_papier_fr",
+    "divider_1",
+    "pourquoi_ce_livre",
+    "extraits",
+    "accroche_finale",
+    "versions_disponibles",
+    "produit_papier_ar"
+  ]
+}

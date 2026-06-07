@@ -1,0 +1,40 @@
+{%- doc -%}
+  Renders a Payhip embed button for digital products (eBooks).
+  Opens in a Payhip overlay that stays within the Baidada Edition visual context.
+
+  @param {string} product_id - The Payhip product ID (from the Payhip dashboard)
+  @param {string} label - Button label text
+  @param {string} [style] - "primary" (default) or "secondary"
+
+  @example
+  {% render 'payhip-button', product_id: 'XXXXX', label: 'Acheter l\'eBook', style: 'primary' %}
+{%- enddoc -%}
+
+{%- liquid
+  assign btn_style = style | default: 'primary'
+  assign btn_class = 'button button--' | append: btn_style
+-%}
+
+<a
+  href="https://payhip.com/b/{{ product_id }}"
+  class="payhip-buy-button {{ btn_class }}"
+  data-product="{{ product_id }}"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {{ label | default: 'Acheter l\'eBook' }}
+</a>
+
+{%- unless payhip_script_loaded -%}
+  <script>
+    (function() {
+      if (window.__payhipLoaded) return;
+      window.__payhipLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://payhip.com/payhip.js';
+      s.async = true;
+      document.head.appendChild(s);
+    })();
+  </script>
+  {%- assign payhip_script_loaded = true -%}
+{%- endunless -%}

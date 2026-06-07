@@ -1,0 +1,10 @@
+{%- doc -%}
+  Loads Arabic Google Fonts only when the active locale is Arabic.
+  Place {% render 'arabic-fonts' %} inside <head> in layout/theme.liquid.
+{%- enddoc -%}
+
+{%- if request.locale.iso_code == 'ar' -%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+{%- endif -%}

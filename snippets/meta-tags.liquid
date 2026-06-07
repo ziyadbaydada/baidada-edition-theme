@@ -119,6 +119,68 @@
   href="{{ canonical_url }}"
 >
 
+{%- comment -%} hreflang for FR/AR bilingual SEO {%- endcomment -%}
+{%- if localization.available_languages.size > 1 -%}
+  {%- for language in localization.available_languages -%}
+    <link
+      rel="alternate"
+      hreflang="{{ language.iso_code }}"
+      href="{{ request.origin }}{{ request.path }}?locale={{ language.iso_code }}"
+    >
+  {%- endfor -%}
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="{{ canonical_url }}"
+  >
+{%- endif -%}
+
+{%- comment -%} Schema.org Organization for Baidada Édition {%- endcomment -%}
+{%- if request.page_type == 'index' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Baidada Édition",
+  "url": "{{ request.origin }}",
+  "description": "Maison d'édition indépendante. Nourrir son esprit.",
+  "founder": {
+    "@type": "Person",
+    "name": "Dr Mohamed Baidada",
+    "jobTitle": "Docteur en psychologie cognitive"
+  },
+  "sameAs": []
+}
+</script>
+{%- endif -%}
+
+{%- comment -%} Schema.org Book for product pages {%- endcomment -%}
+{%- if request.page_type == 'product' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "{{ product.title | escape }}",
+  "author": {
+    "@type": "Person",
+    "name": "Dr Mohamed Baidada"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baidada Édition"
+  },
+  "datePublished": "2024",
+  "inLanguage": "{{ request.locale.iso_code }}",
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ product.price | money_without_currency }}",
+    "priceCurrency": "{{ cart.currency.iso_code }}",
+    "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
+  }
+}
+</script>
+{%- endif -%}
+
 {% if page_description %}
   <meta
     name="description"

@@ -1,0 +1,75 @@
+{%- doc -%}
+  Injects RTL layout styles when the active locale is Arabic.
+  Add {% render 'rtl-styles' %} inside the <head> via snippets/stylesheets.liquid or layout/theme.liquid.
+{%- enddoc -%}
+
+{%- if request.locale.iso_code == 'ar' -%}
+<style>
+  :root {
+    --rtl: 1;
+  }
+
+  html {
+    direction: rtl;
+  }
+
+  /* Flip flex row layouts */
+  .media-with-content {
+    flex-direction: row-reverse;
+  }
+
+  /* Flip text alignment defaults */
+  .section--page-width {
+    text-align: right;
+  }
+
+  /* Navigation */
+  .header__menu {
+    flex-direction: row-reverse;
+  }
+
+  /* Product page */
+  .product-information__content {
+    text-align: right;
+  }
+
+  /* Blog cards */
+  .resource-card {
+    text-align: right;
+  }
+
+  /* Buttons group */
+  .button-group {
+    flex-direction: row-reverse;
+  }
+
+  /* Cart */
+  .cart-items {
+    direction: rtl;
+  }
+
+  /* Form inputs */
+  input, textarea, select {
+    text-align: right;
+  }
+
+  /* Marquee: reverse direction for RTL */
+  .marquee__track {
+    animation-direction: reverse;
+  }
+
+  /* Arabic typography override */
+  body,
+  p,
+  li,
+  td {
+    font-family: 'Cairo', 'Noto Sans Arabic', system-ui, sans-serif;
+    line-height: 1.9;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', 'Noto Sans Arabic', system-ui, sans-serif;
+    font-weight: 700;
+  }
+</style>
+{%- endif -%}

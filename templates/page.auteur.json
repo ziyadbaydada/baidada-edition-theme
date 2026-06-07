@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "hero_auteur": {
+      "type": "hero",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fondateur · Baidada Édition</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "nom": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Dr Mohamed<br>Baidada</h1>",
+            "type_preset": "h1",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "titre_academique": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Docteur en psychologie cognitive &amp; sciences cognitives</em></p>",
+            "type_preset": "h4",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["eyebrow", "nom", "titre_academique"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "layout_desktop": "overlap",
+        "content_position_desktop": "left",
+        "content_alignment_desktop": "left",
+        "min_height_desktop": 70,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "biographie": {
+      "type": "media-with-content",
+      "blocks": {
+        "label": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Biographie</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "bio_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mohamed Baidada est docteur en psychologie et sciences cognitives. Ses travaux portent sur les mécanismes de la prise de décision en contexte d'incertitude, la cognition anticipative et les processus de résilience psychologique face aux crises.</p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "bio_2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Formé à l'Université Mohammed V de Rabat, il a consacré sa thèse de doctorat à l'étude de la métacognition comme outil de prévention des erreurs systémiques. Auteur et conférencier, il intervient régulièrement dans des institutions académiques et professionnelles.</p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["label", "bio_1", "bio_2"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "media_position": "right",
+        "media_width": "medium",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "domaines": {
+      "type": "hero",
+      "blocks": {
+        "label": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Domaines de recherche</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Les champs d'exploration</h2>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "d1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Psychologie cognitive</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "d2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Neurosciences décisionnelles</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "d3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Intelligence préventive</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "d4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Résilience organisationnelle</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "d5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Théorie des biais cognitifs</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "d6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ Philosophie pratique</p>",
+            "type_preset": "body",
+            "font_size": "1.1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["label", "titre", "d1", "d2", "d3", "d4", "d5", "d6"],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "vision_mission": {
+      "type": "media-with-content",
+      "blocks": {
+        "label_vision": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vision</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "vision_titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Rendre la science du cerveau utile à la vie ordinaire</h3>",
+            "type_preset": "h3",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "vision_texte": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mohamed Baidada croit que les connaissances en psychologie cognitive ne devraient pas rester confinées aux laboratoires et aux universités. Sa vision : les rendre accessibles, applicables et transformatrices pour chaque individu.</p>",
+            "type_preset": "body",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["label_vision", "vision_titre", "vision_texte"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "media_position": "left",
+        "media_width": "medium",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "citation_auteur": {
+      "type": "hero",
+      "blocks": {
+        "quote": {
+          "type": "text",
+          "settings": {
+            "text": "<p>« Mon ambition est simple : rendre la science du cerveau utile à la vie ordinaire. »</p>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "attribution": {
+          "type": "text",
+          "settings": {
+            "text": "<p>— Dr Mohamed Baidada</p>",
+            "type_preset": "body",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "font_size": "0.75rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        }
+      },
+      "block_order": ["quote", "attribution"],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "bibliographie": {
+      "type": "hero",
+      "blocks": {
+        "label": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bibliographie</p>",
+            "type_preset": "body",
+            "font_size": "0.75rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "titre": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Œuvres publiées</h2>",
+            "type_preset": "h2",
+            "alignment": "center",
+            "color": "var(--color-foreground-heading)"
+          }
+        },
+        "livre_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Avant la Chute… L'Intelligence Préventive</strong><br>Baidada Édition · 2024 · 36 Maximes · Psychologie préventive</p>",
+            "type_preset": "body",
+            "font_size": "1rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "prochainement": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Prochain ouvrage — À paraître</em></p>",
+            "type_preset": "body",
+            "font_size": "0.9rem",
+            "alignment": "center",
+            "color": "var(--color-foreground)"
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Lire Avant la Chute",
+            "link": "/pages/le-livre",
+            "style_class": "button-primary",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": ["label", "titre", "livre_1", "prochainement", "cta"],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "content_position_desktop": "center",
+        "content_alignment_desktop": "center",
+        "min_height_desktop": 30,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "hero_auteur",
+    "biographie",
+    "domaines",
+    "vision_mission",
+    "citation_auteur",
+    "bibliographie"
+  ]
+}
