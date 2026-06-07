@@ -35,7 +35,11 @@
           }
         }
       },
-      "block_order": ["eyebrow", "titre", "sous_titre"],
+      "block_order": [
+        "eyebrow",
+        "titre",
+        "sous_titre"
+      ],
       "settings": {
         "color_scheme": "scheme-5",
         "content_position_desktop": "center",
@@ -48,29 +52,26 @@
     "papier_fr": {
       "type": "featured-product",
       "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>📚 Livre Papier · Français</p>",
-            "type_preset": "body",
-            "font_size": "0.8rem",
-            "letter_spacing": "0.1em",
-            "case": "uppercase"
-          }
+        "title": {
+          "type": "product-title",
+          "settings": {}
         },
-        "title": { "type": "product-title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "features": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✓ Livraison soignée<br>✓ Impression de qualité<br>✓ Format broché</p>",
-            "type_preset": "body",
-            "color": "var(--color-foreground)"
-          }
+        "price": {
+          "type": "price",
+          "settings": {}
         },
-        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+        "buy": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
       },
-      "block_order": ["eyebrow", "title", "price", "features", "buy"],
+      "block_order": [
+        "title",
+        "price",
+        "buy"
+      ],
       "settings": {
         "product": "avant-la-chute-lintelligence-preventive-version-papier",
         "color_scheme": "scheme-1",
@@ -83,27 +84,26 @@
     "papier_ar": {
       "type": "featured-product",
       "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>📚 كتاب ورقي · عربي</p>",
-            "type_preset": "body",
-            "font_size": "0.8rem"
-          }
+        "title": {
+          "type": "product-title",
+          "settings": {}
         },
-        "title": { "type": "product-title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "features": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✓ توصيل عناية<br>✓ طباعة عالية الجودة<br>✓ غلاف ناعم</p>",
-            "type_preset": "body",
-            "color": "var(--color-foreground)"
-          }
+        "price": {
+          "type": "price",
+          "settings": {}
         },
-        "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
+        "buy": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
       },
-      "block_order": ["eyebrow", "title", "price", "features", "buy"],
+      "block_order": [
+        "title",
+        "price",
+        "buy"
+      ],
       "settings": {
         "product": "avant-la-chute-lintelligence-preventive-version-papier-arabe",
         "color_scheme": "scheme-3",
@@ -135,7 +135,10 @@
           }
         }
       },
-      "block_order": ["titre", "sous_titre"],
+      "block_order": [
+        "titre",
+        "sous_titre"
+      ],
       "settings": {
         "color_scheme": "scheme-5",
         "content_position_desktop": "center",
@@ -193,7 +196,13 @@
           }
         }
       },
-      "block_order": ["eyebrow", "titre", "desc", "avantages", "cta_payhip"],
+      "block_order": [
+        "eyebrow",
+        "titre",
+        "desc",
+        "avantages",
+        "cta_payhip"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "media_position": "left",
@@ -249,7 +258,13 @@
           }
         }
       },
-      "block_order": ["eyebrow", "titre", "desc", "avantages", "cta_payhip"],
+      "block_order": [
+        "eyebrow",
+        "titre",
+        "desc",
+        "avantages",
+        "cta_payhip"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "media_position": "right",
@@ -311,7 +326,13 @@
           }
         }
       },
-      "block_order": ["titre", "g1", "g2", "g3", "contact"],
+      "block_order": [
+        "titre",
+        "g1",
+        "g2",
+        "g3",
+        "contact"
+      ],
       "settings": {
         "color_scheme": "scheme-3",
         "content_position_desktop": "center",

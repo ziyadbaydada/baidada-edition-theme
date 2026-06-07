@@ -48,22 +48,12 @@
     "produit_papier_fr": {
       "type": "featured-product",
       "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Version Française · Broché</p>",
-            "type_preset": "body",
-            "font_size": "0.75rem",
-            "letter_spacing": "0.2em",
-            "case": "uppercase"
-          }
-        },
         "title": { "type": "product-title", "settings": {} },
         "price": { "type": "price", "settings": {} },
         "desc": { "type": "product-description", "settings": {} },
         "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
       },
-      "block_order": ["eyebrow", "title", "price", "desc", "buy"],
+      "block_order": ["title", "price", "desc", "buy"],
       "settings": {
         "product": "avant-la-chute-lintelligence-preventive-version-papier",
         "color_scheme": "scheme-1",
@@ -291,22 +281,12 @@
     "produit_papier_ar": {
       "type": "featured-product",
       "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>النسخة العربية · مجلد</p>",
-            "type_preset": "body",
-            "font_size": "0.75rem",
-            "letter_spacing": "0.1em",
-            "case": "none"
-          }
-        },
         "title": { "type": "product-title", "settings": {} },
         "price": { "type": "price", "settings": {} },
         "desc": { "type": "product-description", "settings": {} },
         "buy": { "type": "buy-buttons", "settings": { "show_dynamic_checkout": true } }
       },
-      "block_order": ["eyebrow", "title", "price", "desc", "buy"],
+      "block_order": ["title", "price", "desc", "buy"],
       "settings": {
         "product": "avant-la-chute-lintelligence-preventive-version-papier-arabe",
         "color_scheme": "scheme-3",
